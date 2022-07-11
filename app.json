@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/home-music/index",
+    "pages/home-video/index",
+    
+    "components/mv-item/index",
+    "pages/detail-mv/index",
+    "pages/user/user",
+    "pages/detail-search/index",
+    "components/header/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fafafa",
+    "navigationBarTitleText": "蒋鹏",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fafafa"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home-music/index",
+        "text": "音乐",
+        "iconPath": "./assets/images/1657161459825_0ECBDAD4-5860-4658-BC0F-AF14A3A29F03.png",
+        "selectedIconPath": "./assets/images/1657161931320_FE22EBDE-5752-483b-A074-F4A917C5D7A6.png"
+      },
+      {
+        "pagePath": "pages/home-video/index",
+        "text": "视频",
+        "iconPath": "./assets/images/1657161493637_34356783-2C12-4913-A7EA-3C7485FB0969.png",
+        "selectedIconPath": "./assets/images/1657162090861_48BACFC1-74D5-4331-9EB9-61AC554E8F7C.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "header": "./components/header"
+  },
+  "useExtendedLib": {
+    "weui": true
+  }
+}

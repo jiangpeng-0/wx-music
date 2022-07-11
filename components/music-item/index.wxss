@@ -1,0 +1,43 @@
+/* components/music-item/index.wxss */
+.music-item{
+  height: 160rpx;
+  width: 100%;
+  margin-bottom: 10rpx;
+  display: flex;
+  align-items: center;
+  background-color: #eeeeee;
+}
+.left{
+  width: 140rpx;
+  height: 140rpx;
+  margin-right: 10rpx;
+  /* background-color: #111111; */
+  overflow: hidden;
+  border-radius: 10rpx;
+  /* 有些机型圆角不生效 时因为手机系统webview渲染的原因  加上这行代码*/
+  transform: translateY(0);
+}
+.left .image{
+  height: 100%;
+  width: 100%;
+}
+.content{
+  height: 140rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content .name{
+  font-weight: 900;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.content .source{
+  font-size: 26rpx;
+  min-height: 56rpx;
+}
+.right{
+  width: 60rpx;
+  height: 60rpx;
+}

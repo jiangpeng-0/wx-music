@@ -1,0 +1,25 @@
+<!--pages/home-video/index.wxml-->
+
+<view class="v-inputs">
+  <view class="v-input">
+    <icon class="icon iconfont icon-search"></icon>
+    <input value="{{name}}" class="ipt" disabled focus placeholder="搜索你喜欢的歌曲" bindtap="toSearch"></input>
+  </view>
+</view>
+
+<swiper hidden="{{!isShow}}" class="swiper" 	autoplay circular	indicator-dots indicator-active-color="#fff">
+  <swiper-item class="swiper-item" wx:for="{{banners}}" wx:key="bannerId">
+    <image class="image-item" bindload="imageLoaded" src="{{item.pic}}" aspectFit></image>
+  </swiper-item>
+</swiper>
+
+<!-- <view class="music-content">
+  <header title="热门推荐"></header>
+  <view class="music-list">
+    <block wx:for="{{hotList}}" wx:key="{{id}}">
+      <music-item item="{{item}}"></music-item>
+    </block>
+  </view>
+</view> -->
+
+<music-menu songMenu="{{songMenuList}}"></music-menu>

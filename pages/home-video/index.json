@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "mv-item":"../../components/mv-item/index",
+    "mp-msg": "weui-miniprogram/msg/msg",
+    "mp-dialog": "weui-miniprogram/dialog/dialog",
+    "mp-searchbar": "weui-miniprogram/searchbar/searchbar"
+  },
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,11 @@
+<!--components/header/index.wxml-->
+<view class="header">
+  <view class="title">{{title}}</view>
+  <view class="right">
+    <view class="slot"><slot></slot></view>
+    <view class="right-text">
+      <text>更多</text>
+      <text class="iconfont "></text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "music-item":"/components/music-item",
+    "music-menu":"/components/music-menu/index"
+  }
+}

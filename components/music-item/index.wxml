@@ -1,0 +1,13 @@
+<!--components/music-item/index.wxml-->
+<view class="music-item">
+  <view class="left">
+    <image class="image" src=""></image>
+  </view>
+  <view class="content">
+    <view class="name">我的11</view>
+    <view class="source">描述22描述22描述22描述</view>
+  </view>
+  <view class="right">
+    <text class="iconfont ">33</text>
+  </view>
+</view>

@@ -1,0 +1,31 @@
+<!--pages/detail-mv/index.wxml-->
+<mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
+<view>
+  <view class="top-mv">
+    <video
+    id="myVideo"
+    class="top-video"
+    src="https://video.da.mgtv.com/new_video/2022/05/31/1179/71369DCF3AF09684F62EEABE1A230E77_20220531_1_1_1291.mp4"
+    controls="{{true}}"
+    referrer-policy="origin"
+    show-fullscreen-btn
+    show-play-btn
+    show-center-play-btn
+    enable-progress-gesture
+    enable-play-gesture="{{true}}"
+    binderror="videoErrorCallback"
+    bindplay="bindPlayVideo"
+    bindended="bindendedVideo">
+    <!-- <cover-view class="cover-image" hidden="{{flag}}"> -->
+            <!-- 覆盖图片 -->
+            <!-- <cover-image class="cover-img" src="http://p1.music.126.net/Z_ItDrQbLJ4kYvoNnkgbBw==/109951167595730312.jpg"></cover-image> -->
+            <!-- 播放按钮 -->
+            <!-- <cover-view hidden="{{isPlay}}" bindtap="playMv" class="cover-play"></cover-view>  -->
+            <!-- <cover-view hidden="{{!isPend}}" bindtap="pendMv" class="cover-play-bottom"></cover-view>  -->
+            <!-- <cover-view hidden="{{!isPend}}" bindtap="quanpin" class="cover-play-quanpin"></cover-view>          -->
+        <!-- </cover-view> -->
+        <cover-view class="mv-error" hidden="{{!flagErr}}"><text>视频出错啦！</text></cover-view>
+    </video>
+  </view>
+  <!-- <audio controls src="https://kvideo01.youju.sohu.com/7f40ba50-c8a8-487a-b1d0-8017d2081f7c2_0_0.mp4"></audio> -->
+</view>

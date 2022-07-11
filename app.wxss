@@ -1,0 +1,7 @@
+/**app.wxss**/
+@import "/assets/iconfont/iconfont.wxss";
+/* @import 'weui-miniprogram/weui-wxss/dist/style/weui.wxss'; */
+page {
+  background-color: #fafafa;
+  box-sizing: border-box;
+} 

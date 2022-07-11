@@ -1,0 +1,19 @@
+/* components/music-menu/index.wxss */
+.music-list{
+  /* width: 100vw; */
+  white-space: nowrap;
+  position: relative;
+  left: -20rpx;
+  /* 在此设置无效 display: flex;
+  flex-wrap: nowrap; */
+}
+.music-item{
+  display: inline-block;
+  width: 180rpx;
+  height: 180rpx;
+  background-color: #ccc;
+  margin-right: 20rpx;
+}
+.music-item:first-child{
+  margin-left: 20rpx;
+}

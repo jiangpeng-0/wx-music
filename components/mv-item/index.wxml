@@ -1,0 +1,16 @@
+<!--components/mv-item/index.wxml-->
+<wxs src="../../utils/format.wxs" module="format"></wxs>
+<view class="mv-item">
+  <view class="mv-item-img">
+    <image src="{{item.cover}}" aspectFit></image>
+    <view class="duration">{{format.formatTime(item.mv.videos[0].duration)}}</view>
+  </view>
+  <view class="mv-item-content">
+    <view class="title">{{item.name}} - {{item.artistName}} </view>
+    <view class="info">
+      <mp-icon icon="video-call" color="black" size="{{20}}"></mp-icon>
+      <view class="count1" hidden="{{item.playCount>=10000}}">{{format.formatCount(item.playCount)}}</view>
+      <view class="count1" hidden="{{item.playCount<10000}}">{{format.formatCount(item.playCount)}}<text class="count2">万</text></view>
+    </view>
+  </view>
+</view>

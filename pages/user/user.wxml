@@ -1,0 +1,4 @@
+<!--pages/user/user.wxml-->
+<mp-dialog ext-class="www" bindbuttontap="handleTest" bindclose="close" buttons="{{arr}}" show="{{dialogFlag}}" mask mask-closable="{{false}}" title="需要验证">
+  <mp-form><input class="input" name="input" placeholder="请输入密码" value="{{value}}"  bindinput="change"/></mp-form>
+</mp-dialog>

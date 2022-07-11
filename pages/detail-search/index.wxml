@@ -1,0 +1,2 @@
+<!--pages/detail-search/index.wxml-->
+<mp-searchbar cancel="{{false}}" focus placeholder="搜索你喜欢的歌曲" bindtap="toSearch"></mp-searchbar>

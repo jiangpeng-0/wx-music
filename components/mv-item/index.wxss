@@ -1,0 +1,49 @@
+/* components/mv-item/index.wxss */
+.mv-item{
+  display: flex;
+  width: 98%;
+  margin: 20rpx auto;
+  background-color: #efefef;
+}
+.mv-item-img{
+  width: 40%;
+  height: 160rpx;
+  margin-right: 20rpx;
+  position: relative;
+}
+.mv-item-content{
+  width: 60%;
+  position: relative;
+}
+.title{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.info{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  font-size: 26rpx;
+  align-items: baseline;
+}
+.count1{
+  color: red;
+  margin-left: 10rpx;
+}
+.count2{
+  color: red;
+  margin-left: 10rpx;
+  font-size: 32rpx;
+  font-weight: 800;
+}
+.duration{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 25rpx;
+  color: #ffffff;
+  font-weight: 900;
+}

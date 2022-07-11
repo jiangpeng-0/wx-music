@@ -1,0 +1,12 @@
+<!--components/music-menu/index.wxml-->
+<view scroll-x class="box">
+  <header title="热门歌曲"></header>
+  <scroll-view scroll-x class="music-list" style="width:{{screenWidth}}px">
+    <block wx:for="{{songMeun}}" wx:key="id">
+      <!-- <view>{{item}}</view> -->
+      <view class="music-item">
+      
+      </view>
+    </block>
+  </scroll-view>
+</view>

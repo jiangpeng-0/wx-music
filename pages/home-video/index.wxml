@@ -1,0 +1,19 @@
+<!--pages/home-music/index.wxml-->
+<block wx:if="{{!dialogFlag}}">
+  <swiper class="swiper" 	autoplay circular	indicator-dots indicator-active-color="#fff">
+  <swiper-item class="swiper-item" wx:for="{{swiperData}}" wx:key="id">
+    <image src="{{item.cover}}" aspectFit></image>
+  </swiper-item>
+</swiper>
+<block wx:for="{{mvData}}" wx:key="id">
+  <mv-item
+  bindtap="handleMvItemClick"
+  item="{{item}}"
+  data-item="{{item}}"></mv-item>
+</block>
+</block>
+<!-- <pop-up></pop-up> -->
+<mp-dialog ext-class="www" bindbuttontap="handleTest" bindclose="close" buttons="{{arr}}" show="{{dialogFlag}}" mask mask-closable="{{false}}" title="需要验证">
+  <input class="input" name="input" placeholder="请输入密码" value="{{value}}"  bindinput="change"/>
+</mp-dialog>
+<!-- <mp-searchbar mask mask-closable title="eeeee"></mp-searchbar> -->

@@ -1,0 +1,14 @@
+/* pages/user/user.wxss */
+.input{
+  background-color: #efefef;
+  height: 100rpx;
+  border-radius: 100rpx;
+}
+.www{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99999;
+}

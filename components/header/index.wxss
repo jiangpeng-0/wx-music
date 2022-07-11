@@ -1,0 +1,21 @@
+/* components/header/index.wxss */
+.header{
+  height: 100rpx;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title{
+  font-weight: 900;
+  font-size: 38rpx;
+}
+/* vue插槽的功能小程序不支持 所以用了个伪类.slot:empty 
+当这个元素的子元素为空时设置要显示的元素 */
+.header .slot:empty + .right-text{
+  display: flex;
+}
+.right-text{
+  display: none;
+  font-size: 28rpx;
+  color: #666;
+}

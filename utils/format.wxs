@@ -1,0 +1,30 @@
+function formatCount (count){
+  var counter = parseInt(count);
+  // var y=100000000;
+  var w=10000;
+  // if(counter>y){
+  //   return (counter/y).toFixed(1)+"亿"
+  // }
+  if(counter>=w){
+    if(count%w>0){
+      return (counter/w).toFixed(1)
+    }else{
+      return (counter/w)
+    }
+  }
+  return counter
+}
+function padZero(time){
+  time=time.toString()
+  return ("00"+time).slice(time.length)
+}
+function formatTime(time){
+  var m=Math.floor(time/1000/60);
+  var s=Math.floor(time%60);
+  return padZero(m) + " : " + padZero(s)
+}
+
+module.exports={
+  formatCount:formatCount,
+  formatTime:formatTime
+}
